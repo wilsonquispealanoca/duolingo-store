@@ -1,0 +1,26 @@
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.6rem;
+}
+
+.image-fluid-slide {
+  width: 6.8rem;
+  height: 6.8rem;
+  object-fit: cover;
+  border-radius: 1.6rem;
+}
+
+.slide-product {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.p-3 {
+  padding: 3rem 0;
+}

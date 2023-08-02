@@ -1,0 +1,9 @@
+.price {
+  font-size: var(--lg);
+  margin-bottom: 2rem;
+}
+
+.price-title {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+}

@@ -11,6 +11,10 @@
   --info: #0dcaf0;
   --warning: #ffc107;
   --danger: #dc3545;
+
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
 }
 /* In this part we apply box-sizing: border-box; so that in the dimensions of the elements we do not add the borders and padding. With margin:0 and padding:0; we clean all the margins and paddings that the browsers apply by default. */
 *,
@@ -27,6 +31,7 @@
 /* Here we apply this font size %, and then work with the relative unit rem so that the equivalence with px is 1rem = 10px. */
 html {
   font-size: 62.5%;
+  color: var(--text-black);
 }
 
 /* For the body, we apply the min-height: 100vh; so that if there is not enough content the body has the height of the height of the screen and the scroll-behavior: smooth; to smooth the movements between anchors. */
@@ -34,7 +39,8 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: var(--md);
+  font-family: DinRounded-regular;
 }
 
 /* For images and other visual elements we make them responsive and save overflows. */
@@ -61,6 +67,10 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
 }
@@ -72,4 +82,14 @@ input:focus {
 @font-face {
   font-family: Feather-bold;
   src: url(/fonts/Feather-Bold.otf);
+}
+
+@font-face {
+  font-family: DinRounded-regular;
+  src: url(/fonts/DINNextRoundedLTPro-Regular.otf);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
 }
