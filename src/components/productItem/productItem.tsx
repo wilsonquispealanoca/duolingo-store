@@ -1,4 +1,4 @@
-import { component$, useStyles$, useContext } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
 import styles from "./app.css?inline";
 import { Image } from "@unpic/qwik";
