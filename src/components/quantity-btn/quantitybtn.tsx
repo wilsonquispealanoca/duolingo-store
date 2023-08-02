@@ -1,10 +1,18 @@
 // import { CartContext } from "../cartStore/cartStore";
 import styles from "./quantitybtn.css?inline";
-import { component$, useStyles$, useSignal } from "@builder.io/qwik";
+import {
+  component$,
+  useStyles$,
+  useSignal,
+  useContext,
+} from "@builder.io/qwik";
+import { CartInformationContext } from "~/root";
 
 export default component$(() => {
+  const stateCart: any = useContext(CartInformationContext);
   useStyles$(styles);
   const count = useSignal(0);
+
   return (
     <>
       <div class="flex wrapper-quantity">

@@ -1,9 +1,11 @@
 import styles from "./header.css?inline";
-import { component$, useStyles$, useSignal } from "@builder.io/qwik";
+import { component$, useStyles$, useContext } from "@builder.io/qwik";
+import { CartInformationContext } from "~/root";
 
 export default component$(() => {
+  const stateCart: any = useContext(CartInformationContext);
+
   useStyles$(styles);
-  const count = useSignal(0);
   return (
     <nav>
       <div class="nav-container">
@@ -24,7 +26,7 @@ export default component$(() => {
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </a>
-        <a href="">
+        <a href="/">
           <h1 class="title">Duolingo store</h1>
         </a>
         <a href="">
@@ -59,7 +61,9 @@ export default component$(() => {
             <circle cx="18" cy="20.5" r="1"></circle>
             <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
           </svg>
-          <span class="quantity-cart">{count.value}</span>
+          {stateCart.cart.length > 0 ? (
+            <span class="quantity-cart">{stateCart.cart.length}</span>
+          ) : null}
         </a>
       </div>
     </nav>

@@ -1,0 +1,15 @@
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .d-flex {
+    display: flex;
+  }
+
+  .col1 {
+    flex: 50%;
+    margin-right: 6rem;
+  }
+
+  .col2 {
+    flex: 50%;
+  }
+}

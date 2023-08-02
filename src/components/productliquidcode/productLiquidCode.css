@@ -8,7 +8,6 @@
   box-shadow: 0 0.4rem var(--green-brand);
   border-radius: 1.2rem;
   background: white;
-  color: var(--text-input);
   padding: 1rem;
   place-items: center;
   cursor: pointer;
@@ -16,8 +15,14 @@
 
 .product-liquid-description {
   margin-left: 1rem;
+  color: var(--text-input);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.product-name {
+  text-transform: capitalize;
+  margin: 0 0.4rem;
 }

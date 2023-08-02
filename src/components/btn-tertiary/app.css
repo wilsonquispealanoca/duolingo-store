@@ -1,0 +1,29 @@
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .relative:hover .btn-product-home {
+    opacity: 1; /* Mostrar el botón cuando el cursor está sobre la imagen */
+    display: block;
+  }
+
+  .btn-product-home {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: var(--green-brand);
+    border: 3px solid var(--green-brand);
+    border-radius: 1rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-family: "Feather-bold";
+    cursor: pointer;
+    width: 28rem;
+    opacity: 0; /* El botón estará oculto inicialmente */
+    transition: opacity 0.3s ease;
+  }
+}
+
+.btn-product-home {
+  display: none;
+}

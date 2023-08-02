@@ -93,3 +93,16 @@ input:focus {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .container {
+    max-width: 72rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 114rem;
+  }
+}
