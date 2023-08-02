@@ -1,4 +1,4 @@
-import { createContextId, useSignal } from "@builder.io/qwik";
+/* import { createContextId, useSignal } from "@builder.io/qwik";
 
 export const CartContext = createContextId("cart.context");
 
@@ -13,4 +13,4 @@ export const removeFromCart = () => {
   if (cartCount.value > 0) {
     cartCount.value -= 1;
   }
-};
+}; */
