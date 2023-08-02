@@ -1,6 +1,11 @@
 .detail-title {
   text-transform: uppercase;
   color: var(--green-brand);
-  font-size: var(--md);
+  font-size: var(--lg);
+  margin: 2rem 0;
+}
+
+.detail-description {
+  font-size: var(--lg);
   margin: 2rem 0;
 }

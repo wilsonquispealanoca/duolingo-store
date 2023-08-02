@@ -11,10 +11,10 @@ export default component$(() => {
   useStyles$(styles);
   const store = useStore({
     list: [
-      "../src/media/Duolingo_Lily.webp",
-      "../src/media/Duolingo_Lily2.webp",
-      "../src/media/Duolingo_Lily3.webp",
-      "../src/media/Duolingo_Lily4.webp",
+      "/media/Duolingo_Lily.webp",
+      "/media/Duolingo_Lily2.webp",
+      "/media/Duolingo_Lily3.webp",
+      "/media/Duolingo_Lily4.webp",
     ],
     currentIndex: 0,
   });

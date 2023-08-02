@@ -12,7 +12,7 @@ export default component$<DetailsProps>(({ title, subtitle }) => {
   return (
     <div>
       <h2 class="detail-title">{title}</h2>
-      <p>{subtitle}</p>
+      <p class="detail-description">{subtitle}</p>
       <List
         text1="10” tall"
         text2="This item ships from the USA"

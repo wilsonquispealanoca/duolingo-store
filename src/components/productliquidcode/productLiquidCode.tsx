@@ -9,7 +9,7 @@ export default component$(() => {
       <div class="flex">
         <figure>
           <Image
-            src="../src/media/Duolingo_transparent.webp"
+            src="/media/Duolingo_transparent.webp"
             layout="constrained"
             width={80}
             height={80}
