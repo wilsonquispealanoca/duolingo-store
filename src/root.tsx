@@ -28,10 +28,6 @@ export default component$(() => {
     cart: [],
   });
 
-  const addToCart = (product: string) => {
-    stateCart.cart.push(product);
-  };
-
   useContextProvider(CartInformationContext, stateCart);
 
   return (

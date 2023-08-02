@@ -1,10 +1,9 @@
-import { component$, useStyles$, useContext, $ } from "@builder.io/qwik";
+import { component$, useStyles$, useContext } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
 import styles from "./app.css?inline";
 import { Image } from "@unpic/qwik";
 import ProductPrice from "../productPrice/productPrice";
 import BtnTertiary from "../btn-tertiary/btn-tertiary";
-import { CartInformationContext } from "~/root";
 
 interface ItemProps {
   image: string;
@@ -14,7 +13,7 @@ interface ItemProps {
 }
 
 export default component$<ItemProps>(({ image, url, title, price }) => {
-  const stateCart: any = useContext(CartInformationContext);
+  // const stateCart: any = useContext(CartInformationContext);
 
   /*  const addToCart = (product: ItemProps) => {
     stateCart.cart.value = [...stateCart.cart.value, product];

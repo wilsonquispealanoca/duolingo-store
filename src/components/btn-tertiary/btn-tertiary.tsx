@@ -1,15 +1,7 @@
-import { component$, useStyles$, QRL } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import styles from "./app.css?inline";
 
-interface ProductButtonTertiaryProps {
-  onClick$?: QRL<() => void>;
-}
-
-export default component$<ProductButtonTertiaryProps>((props) => {
+export default component$(() => {
   useStyles$(styles);
-  return (
-    <button class="btn-product-home" onClick$={props.onClick$}>
-      Add to cart
-    </button>
-  );
+  return <button class="btn-product-home">Add to cart</button>;
 });
