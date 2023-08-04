@@ -16,6 +16,3 @@ interface ICartItem {
   item: Product;
   quantity: number;
 }
-interface IGlobalState {
-  cart: ICartItem[];
-}
