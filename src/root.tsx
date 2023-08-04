@@ -13,6 +13,10 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
+interface IGlobalState {
+  cart: ICartItem[];
+}
+
 export const CONTEXT_NAME = "duolingo-store";
 
 export const GlobalContext = createContextId<IGlobalState>(CONTEXT_NAME);

@@ -10,10 +10,10 @@ export default component$(() => {
         <p>Items in your cart : {cartState.cart.length}</p>
       )}
       {cartState.cart.map((cartItem, index) => (
-        <div>
+        <li key={index}>
           <h2>{cartItem.item.title}</h2>
           <p>{cartItem.item.price}</p>
-        </div>
+        </li>
       ))}
     </>
   );
