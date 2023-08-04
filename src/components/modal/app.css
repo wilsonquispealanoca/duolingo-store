@@ -1,0 +1,113 @@
+.btn-close {
+  width: 3rem;
+  height: 6rem;
+  font-size: 4rem;
+  color: var(--green-brand);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10000;
+  padding: 2rem;
+}
+
+.modal-title {
+  font-family: Feather-bold;
+  color: var(--green-brand);
+  font-size: 3.2rem;
+}
+
+.container-title {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-alert-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.6rem 0;
+  background: #58cc021f;
+  color: var(--green-brand);
+  border: 0.2rem solid #58cc021f;
+  border-radius: 0.3rem;
+}
+
+.modal-image {
+  display: flex;
+}
+
+.flex-33 {
+  flex: 43%;
+}
+
+.flex-66 {
+  flex: 57%;
+}
+
+.modal-image-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.btn-trash {
+  border: none;
+  background: transparent;
+  color: var(--green-brand);
+}
+
+.modal-subtotal {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+.modal-shipping {
+  text-align: center;
+  color: #6c757d;
+}
+
+.modal-total {
+  position: fixed;
+  background: white;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 2rem 2rem;
+}
+
+.btn-checkout {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Feather-bold";
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0.4rem var(--green-shadown-brand);
+  border-radius: 1.2rem;
+  background: var(--green-brand);
+  color: white;
+}
+
+.modal-view-cart {
+  font-family: "Feather-bold";
+  color: var(--green-brand);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1.4rem;
+  font-size: var(--sm);
+}

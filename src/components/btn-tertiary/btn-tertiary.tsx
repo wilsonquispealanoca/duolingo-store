@@ -9,6 +9,7 @@ interface Props {
 export default component$(({ product }: Props) => {
   const cartState = useContext(GlobalContext);
   useStyles$(styles);
+
   return (
     <button
       class="btn-product-home"

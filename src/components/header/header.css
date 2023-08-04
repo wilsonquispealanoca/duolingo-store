@@ -26,12 +26,13 @@ nav {
   z-index: 1000;
 }
 .nav-cart {
+  width: 100%;
   position: relative;
-  padding: 0 1rem;
+  padding: 0 3.2rem;
 }
 .quantity-cart {
   position: absolute;
-  top: 1px;
+  top: 1.6rem;
   right: 0;
   width: 1.8rem;
   height: 1.8rem;
@@ -43,4 +44,8 @@ nav {
   border-radius: 50%;
   font-size: 1rem;
   text-align: center;
+}
+
+.header-cart {
+  cursor: pointer;
 }
