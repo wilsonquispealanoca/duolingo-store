@@ -6,13 +6,10 @@ import ProductPrice from "../productPrice/productPrice";
 import BtnTertiary from "../btn-tertiary/btn-tertiary";
 
 interface ItemProps {
-  image: string;
-  url: string;
-  title: string;
-  price: number;
+  product: Product;
 }
 
-export default component$<ItemProps>(({ image, url, title, price }) => {
+export default component$(({ product }: ItemProps) => {
   // const stateCart: any = useContext(CartInformationContext);
 
   /*  const addToCart = (product: ItemProps) => {
@@ -23,9 +20,9 @@ export default component$<ItemProps>(({ image, url, title, price }) => {
   return (
     <li class="list-none">
       <div class="relative">
-        <Link href={`/products/${url}-plushie/`}>
+        <Link href={`/products/${product.url}-plushie/`}>
           <Image
-            src={`${image}`}
+            src={`${product.image}`}
             layout="constrained"
             width={500}
             height={440}
@@ -33,9 +30,9 @@ export default component$<ItemProps>(({ image, url, title, price }) => {
             class="image-fluid-item"
           />
         </Link>
-        <BtnTertiary />
+        <BtnTertiary product={product} />
       </div>
-      <ProductPrice title={title} price={price} />
+      <ProductPrice title={product.title} price={product.price} />
     </li>
   );
 });

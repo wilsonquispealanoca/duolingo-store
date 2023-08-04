@@ -6,43 +6,55 @@ const data = [
   {
     id: 1,
     image: "/media/Duolingo_t_shirt_black.webp",
-    name: "Remind Me T-Shirt",
+    title: "Remind Me T-Shirt",
     price: 29.95,
+    description: "description1",
+    category: "pushie",
     url: "duo",
   },
   {
     id: 2,
     image: "/media/Duolingo_t_shirt_white.webp",
-    name: "Duo Strut T-Shirt",
+    title: "Duo Strut T-Shirt",
     price: 29.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
   {
     id: 3,
     image: "/media/Duolingo_t_shirt_green.webp",
-    name: "The Duo Polo",
+    title: "The Duo Polo",
     price: 43.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
   {
     id: 4,
     image: "/media/Duolingo_duo_stickers.webp",
-    name: "Duo Sticker Pack",
+    title: "Duo Sticker Pack",
     price: 9.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
   {
     id: 5,
     image: "/media/Duolingo_mixed_emotion.webp",
-    name: "Duo's Mixed Emotions Pin",
+    title: "Duo's Mixed Emotions Pin",
     price: 14.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
   {
     id: 6,
     image: "/media/Duolingo_lily_stickers.webp",
-    name: "Lily Sticker Pack",
+    title: "Lily Sticker Pack",
     price: 9.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
 ];
@@ -52,13 +64,8 @@ export default component$(() => {
   return (
     <div class="container m-4">
       <ul class="grid">
-        {data.map((item) => (
-          <ProductItem
-            image={item.image}
-            title={item.name}
-            price={item.price}
-            url={item.url}
-          />
+        {data.map((product, i) => (
+          <ProductItem product={product} key={i} />
         ))}
       </ul>
     </div>

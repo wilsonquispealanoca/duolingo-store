@@ -1,10 +1,10 @@
+import { GlobalContext } from "~/root";
 import styles from "./header.css?inline";
-import { component$, useStyles$, useContext } from "@builder.io/qwik";
-import { CartInformationContext } from "~/root";
+import { component$, useContext, useStyles$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  const stateCart: any = useContext(CartInformationContext);
-
+  const stateCart = useContext(GlobalContext);
   useStyles$(styles);
   return (
     <nav>
@@ -45,26 +45,28 @@ export default component$(() => {
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </a>
-        <a href="" class="nav-cart">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#58cc02"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="10" cy="20.5" r="1"></circle>
-            <circle cx="18" cy="20.5" r="1"></circle>
-            <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
-          </svg>
-          {stateCart.cart.length > 0 ? (
-            <span class="quantity-cart">{stateCart.cart.length}</span>
-          ) : null}
-        </a>
+        <Link href="cart">
+          <span class="nav-cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#58cc02"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="10" cy="20.5" r="1"></circle>
+              <circle cx="18" cy="20.5" r="1"></circle>
+              <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
+            </svg>
+            {stateCart.cart.length > 0 ? (
+              <span class="quantity-cart">{stateCart.cart.length}</span>
+            ) : null}
+          </span>
+        </Link>
       </div>
     </nav>
   );

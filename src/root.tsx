@@ -13,23 +13,17 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
-/* Add context global app*/
+export const CONTEXT_NAME = "duolingo-store";
 
-/* type */
-interface CartStore {
-  cart: string[];
-}
-
-export const CartInformationContext = createContextId<CartStore>("cart");
+export const GlobalContext = createContextId<IGlobalState>(CONTEXT_NAME);
 
 export default component$(() => {
   /* Initial state global app */
-  const stateCart = useStore<CartStore>({
+  const stateCart = useStore<IGlobalState>({
     cart: [],
   });
 
-  useContextProvider(CartInformationContext, stateCart);
-
+  useContextProvider(GlobalContext, stateCart);
   return (
     <QwikCityProvider>
       <head>

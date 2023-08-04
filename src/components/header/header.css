@@ -2,6 +2,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: 10rem;
   justify-content: space-between;
   padding: 0.5rem 0;
 }
@@ -10,13 +11,19 @@ nav {
   color: var(--green-brand);
 }
 .nav-container {
+  position: fixed;
   display: flex;
   flex-wrap: inherit;
   align-items: center;
+  background: white;
+  /* background: #00000006;
+  -webkit-backdrop-filter: blur(23px) saturate(4.5);
+  backdrop-filter: blur(23px) saturate(4.5); */
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 2rem;
+  z-index: 1000;
 }
 .nav-cart {
   position: relative;

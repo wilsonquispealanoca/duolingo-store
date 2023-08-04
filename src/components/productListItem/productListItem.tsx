@@ -6,15 +6,19 @@ const data = [
   {
     id: 1,
     image: "/media/Duolingo.webp",
-    name: "Duo Plushie",
+    title: "Duo Plushie",
     price: 29.95,
+    description: "description1",
+    category: "pushie",
     url: "duo",
   },
   {
     id: 2,
     image: "/media/Duolingo_Lily.webp",
-    name: "Lily Plushie",
+    title: "Lily Plushie",
     price: 33.95,
+    description: "description1",
+    category: "pushie",
     url: "lily",
   },
 ];
@@ -24,13 +28,8 @@ export default component$(() => {
   return (
     <div class="container m-4">
       <ul class="grid-2">
-        {data.map((item) => (
-          <ProductItem
-            image={item.image}
-            title={item.name}
-            price={item.price}
-            url={item.url}
-          />
+        {data.map((product, i) => (
+          <ProductItem product={product} key={i} />
         ))}
       </ul>
     </div>
