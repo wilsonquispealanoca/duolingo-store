@@ -1,7 +1,6 @@
 import { component$, useContext, useStyles$ } from "@builder.io/qwik";
 import { GlobalContext } from "~/root";
 import styles from "./app.css?inline";
-import Button from "~/components/button/button";
 import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
