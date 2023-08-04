@@ -4,6 +4,7 @@ import styles from "./app.css?inline";
 import { Image } from "@unpic/qwik";
 import ProductPrice from "../productPrice/productPrice";
 import BtnTertiary from "../btn-tertiary/btn-tertiary";
+import { Product } from "~/root";
 
 interface ItemProps {
   product: Product;

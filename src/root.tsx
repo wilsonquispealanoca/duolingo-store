@@ -13,7 +13,7 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
-interface Product {
+export interface Product {
   id: number;
   title: string;
   price: number;

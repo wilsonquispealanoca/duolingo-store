@@ -1,6 +1,6 @@
 import { component$, useContext, useStyles$ } from "@builder.io/qwik";
 import styles from "./app.css?inline";
-import { GlobalContext } from "~/root";
+import { GlobalContext, Product } from "~/root";
 
 interface Props {
   product: Product;
