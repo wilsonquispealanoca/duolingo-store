@@ -13,6 +13,20 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  url: string;
+  /* rating: {
+      rate: number;
+      count: number;
+    }; */
+}
+
 interface ICartItem {
   item: Product;
   quantity: number;
