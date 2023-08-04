@@ -13,6 +13,11 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
+interface ICartItem {
+  item: Product;
+  quantity: number;
+}
+
 interface IGlobalState {
   cart: ICartItem[];
 }

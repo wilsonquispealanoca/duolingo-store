@@ -11,8 +11,3 @@ interface Product {
       count: number;
     }; */
 }
-
-interface ICartItem {
-  item: Product;
-  quantity: number;
-}
