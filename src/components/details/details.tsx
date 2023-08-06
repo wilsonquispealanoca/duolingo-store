@@ -1,6 +1,5 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
 import styles from "./details.css?inline";
-import List from "../lists/lists";
 
 interface DetailsProps {
   title: string;
