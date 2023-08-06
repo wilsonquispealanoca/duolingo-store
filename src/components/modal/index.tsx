@@ -1,7 +1,5 @@
 import { useStyles$, component$, type PropFunction } from "@builder.io/qwik";
 import styles from "./app.css?inline";
-import { Image } from "@unpic/qwik";
-import Quantitybtn from "../quantity-btn/quantitybtn";
 import { Link } from "@builder.io/qwik-city";
 import { useContext } from "@builder.io/qwik";
 import { GlobalContext } from "~/root";
