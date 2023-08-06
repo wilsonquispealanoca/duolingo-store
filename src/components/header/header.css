@@ -6,7 +6,6 @@ nav {
   justify-content: space-between;
   padding: 0.5rem 0;
 }
-
 .title {
   color: var(--green-brand);
 }
@@ -48,4 +47,21 @@ nav {
 
 .header-cart {
   cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .nav-icons {
+    gap: 2rem;
+  }
+
+  .icon-menu-mobile {
+    display: none;
+  }
 }

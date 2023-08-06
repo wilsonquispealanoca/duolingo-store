@@ -1,3 +1,7 @@
-.p-left {
-  padding-left: 3.6rem;
+.l-style {
+  list-style: disc;
+}
+
+.container-list {
+  margin: 0 2rem;
 }

@@ -22,6 +22,7 @@ export interface Product {
   image: string;
   url: string;
   list: string[];
+  subDetails: string[];
 }
 
 interface ICartItem {

@@ -12,7 +12,7 @@ export default component$<ImageProps>(({ image, productName }) => {
   useStyles$(styles);
   return (
     <div class="product-liquid-container">
-      <Link href={`/products/${productName}-plushie`}>
+      <Link href={`/products/${productName}`}>
         <div class="flex">
           <figure>
             <Image

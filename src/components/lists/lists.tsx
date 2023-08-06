@@ -2,18 +2,14 @@ import { component$, useStyles$ } from "@builder.io/qwik";
 import styles from "./lists.css?inline";
 
 interface ListProps {
-  text1: string;
-  text2: string;
-  text3: string;
+  texts: string;
 }
 
-export default component$<ListProps>(({ text1, text2, text3 }) => {
+export default component$<ListProps>(({ texts }) => {
   useStyles$(styles);
   return (
-    <ul class="p-left">
-      <li>{text1}</li>
-      <li>{text2}</li>
-      <li>{text3}</li>
-    </ul>
+    <div class="container-list">
+      <li class="l-style">{texts}</li>
+    </div>
   );
 });

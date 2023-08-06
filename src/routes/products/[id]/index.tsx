@@ -11,6 +11,7 @@ import ProductPrice from "~/components/productPrice/productPrice";
 import ProductLiquidCode from "~/components/productliquidcode/productLiquidCode";
 import Quantitybtn from "~/components/quantity-btn/quantitybtn";
 import { Product } from "~/root";
+import Lists from "~/components/lists/lists";
 
 export const useProducts = routeLoader$(async ({ params, status }) => {
   const [product] = products.filter((p) => p.id === +params.id);
@@ -46,52 +47,60 @@ export default component$(() => {
   return (
     <div class="container">
       <div class="d-flex">
-        <li>
-          <div class="container-image col1">
-            <div class="p-3">
-              <figure>
-                <Image
-                  src={signal.value.list[store.currentIndex]}
-                  layout="constrained"
-                  width={960}
-                  height={1200}
-                  alt="A lovely bath"
-                  class="image-fluid"
-                />
-              </figure>
-              <ul class="slide-product">
-                {signal.value.list.map((item, index) => (
-                  <li key={index} class="list-style-none">
-                    <Image
-                      src={item}
-                      onClick$={() => handleImageClick(index)}
-                      layout="constrained"
-                      width={160}
-                      height={160}
-                      alt="A lovely bath"
-                      class="image-fluid-slide image-fluid"
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div class="container-image col1">
+          <div class="p-3">
+            <figure>
+              <Image
+                src={signal.value.list[store.currentIndex]}
+                layout="constrained"
+                width={960}
+                height={1200}
+                alt="A lovely bath"
+                class="image-fluid"
+              />
+            </figure>
+            <ul class="slide-product">
+              {signal.value.list.map((item, index) => (
+                <li key={index} class="list-style-none">
+                  <Image
+                    src={item}
+                    onClick$={() => handleImageClick(index)}
+                    layout="constrained"
+                    width={160}
+                    height={160}
+                    alt="A lovely bath"
+                    class="image-fluid-slide image-fluid"
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
-          <div class="col2">
-            <ProductPrice
-              title={signal.value.title}
-              price={signal.value.price}
-            />
-            <div class="flex">
-              <Quantitybtn />
-              <Button product={signal.value} title="Add to cart" />
-            </div>
+        </div>
+        <div class="col2">
+          <ProductPrice title={signal.value.title} price={signal.value.price} />
+          <div class="flex">
+            <Quantitybtn />
+            <Button product={signal.value} title="Add to cart" />
+          </div>
+          {signal.value.id === 1 && (
             <ProductLiquidCode
-              image={signal.value.image}
-              productName={signal.value.url}
+              image="/media/Duolingo_lily_transparent.webp"
+              productName="2"
             />
-            <Details title="Details" subtitle={signal.value.description} />
-          </div>
-        </li>
+          )}
+          {signal.value.id === 2 && (
+            <ProductLiquidCode
+              image="/media/Duolingo_transparent.webp"
+              productName="1"
+            />
+          )}
+          <Details title="Details" subtitle={signal.value.description} />
+          <ul>
+            {signal.value.subDetails.map((item) => (
+              <Lists texts={item} />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

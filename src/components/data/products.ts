@@ -16,6 +16,12 @@ export const products: Product[] = [
       "/media/Duolingo_3.webp",
       "/media/Duolingo_4.webp",
     ],
+    subDetails: [
+      "8.5” tall plushie of Duo the owl",
+      "High-quality and huggable with super duper soft fabric",
+      "This item ships from the USA",
+      "Suitable for ages 14+",
+    ],
   },
   {
     id: 2,
@@ -31,6 +37,11 @@ export const products: Product[] = [
       "/media/Duolingo_Lily2.webp",
       "/media/Duolingo_Lily3.webp",
       "/media/Duolingo_Lily4.webp",
+    ],
+    subDetails: [
+      "10” tall",
+      "This item ships from the USA",
+      "Suitable for ages 14+",
     ],
   },
   {
@@ -48,6 +59,15 @@ export const products: Product[] = [
       "/media/Duolingo_t_shirt_black3.webp",
       "/media/Duolingo_t_shirt_black4.webp",
       "/media/Duolingo_t_shirt_black5.webp",
+    ],
+    subDetails: [
+      "100% cotton black t-shirt",
+      "Oversized, boxy fit",
+      "Screen printed design with puff print details",
+      "Duolingo hem tag",
+      "Printed neck tag",
+      "Machine wash cold inside out, tumble dry low",
+      "This item ships from the USA",
     ],
   },
   {
@@ -67,6 +87,15 @@ export const products: Product[] = [
       "/media/Duolingo_t_shirt_white5.webp",
       "/media/Duolingo_t_shirt_white6.webp",
     ],
+    subDetails: [
+      "100% cotton white t-shirt",
+      "Fits true-to-size",
+      "Screen printed design",
+      "Duolingo hem tag",
+      "Printed neck tag",
+      "Machine wash cold inside out, tumble dry low",
+      "This item ships from the USA",
+    ],
   },
   {
     id: 5,
@@ -83,6 +112,15 @@ export const products: Product[] = [
       "/media/Duolingo_t_shirt_green3.webp",
       "/media/Duolingo_t_shirt_green4.webp",
     ],
+    subDetails: [
+      "100% cotton pique",
+      "Fits true-to-size",
+      "Custom dyed Duolingo Feather Green fabric",
+      "Left chest Duo patch embroidery, 1.25” wide",
+      "Custom dyed rubber buttons",
+      "Machine wash cold inside out, tumble dry low",
+      "This item ships from the USA",
+    ],
   },
   {
     id: 6,
@@ -96,6 +134,13 @@ export const products: Product[] = [
     list: [
       "/media/Duolingo_duo_stickers.webp",
       "/media/Duolingo_duo_stickers2.webp",
+    ],
+    subDetails: [
+      "15 stickers per pack",
+      "Stickers range in size from 0.7” tall to 2.25” tall",
+      "Assortment of vinyl die cut stickers",
+      "This item ships from the USA",
+      "Orders with this item will start shipping August 9th",
     ],
   },
   {
@@ -112,6 +157,11 @@ export const products: Product[] = [
       "/media/Duolingo_mixed_emotion2.webp",
       "/media/Duolingo_mixed_emotion3.webp",
     ],
+    subDetails: [
+      "'1.33' 'x 1.25' metal and enamel pin",
+      "Spin to change Duo's expression",
+      "This item ships from the USA",
+    ],
   },
   {
     id: 8,
@@ -125,6 +175,13 @@ export const products: Product[] = [
     list: [
       "/media/Duolingo_lily_stickers.webp",
       "/media/Duolingo_lily_stickers2.webp",
+    ],
+    subDetails: [
+      "15 stickers per pack",
+      "Stickers range in size from 0.8” tall to 3.25” tall",
+      "Assortment of vinyl die cut stickers",
+      "This item ships from the USA",
+      "Orders with this item will start shipping August 9th",
     ],
   },
 ];
