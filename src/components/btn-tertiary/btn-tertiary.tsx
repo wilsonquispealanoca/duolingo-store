@@ -14,7 +14,7 @@ export default component$(({ product }: Props) => {
     <button
       class="btn-product-home"
       onClick$={() => {
-        cartState.cart.push({
+        cartState.cart.unshift({
           item: product,
           quantity: 1,
         });

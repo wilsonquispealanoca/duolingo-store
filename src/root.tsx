@@ -21,10 +21,7 @@ export interface Product {
   category: string;
   image: string;
   url: string;
-  /* rating: {
-      rate: number;
-      count: number;
-    }; */
+  list: string[];
 }
 
 interface ICartItem {

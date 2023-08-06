@@ -21,7 +21,7 @@ export default component$(({ product }: ItemProps) => {
   return (
     <li class="list-none">
       <div class="relative">
-        <Link href={`/products/${product.url}-plushie/`}>
+        <Link href={`/products/${product.id}`}>
           <Image
             src={`${product.image}`}
             layout="constrained"

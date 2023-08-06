@@ -9,6 +9,16 @@
   padding: 0 2rem;
 }
 
+.footer-relative {
+  position: relative;
+}
+
+.footer-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .item-footer {
   margin-left: 2rem;
 }

@@ -36,7 +36,7 @@ html {
 
 /* For the body, we apply the min-height: 100vh; so that if there is not enough content the body has the height of the height of the screen and the scroll-behavior: smooth; to smooth the movements between anchors. */
 body {
-  min-height: 100vh;
+  min-height: calc(100vh - 30rem);
   scroll-behavior: smooth;
   line-height: 1.5;
   font-size: var(--md);
@@ -75,6 +75,10 @@ a {
   display: flex;
 }
 
+li {
+  list-style: none;
+}
+
 input:focus {
   outline: none;
 }
@@ -91,7 +95,7 @@ input:focus {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20rem auto;
   padding: 0 2rem;
 }
 
